@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JS Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="show" readonly />
+      <div class="btn-container">
+        <button class="numbers" id="num" onclick="num(7)">7</button>
+        <button class="numbers" id="num" onclick="num(8)">8</button>
+        <button class="numbers" id="num" onclick="num(9)">9</button>
+        <button class="operators" id="operator" onclick="divide()">÷</button>
+        <button class="numbers" id="num" onclick="num(4)">4</button>
+        <button class="numbers" id="num" onclick="num(5)">5</button>
+        <button class="numbers" id="num" onclick="num(6)">6</button>
+        <button class="operators" id="operator" onclick="multi()">×</button>
+        <button class="numbers" id="num" onclick="num(1)">1</button>
+        <button class="numbers" id="num" onclick="num(2)">2</button>
+        <button class="numbers" id="num" onclick="num(3)">3</button>
+        <button class="operators" id="operator" onclick="sub()">-</button>
+        <button class="numbers" id="clear" onclick="clearContent()">C</button>
+        <button class="numbers" id="num" onclick="num(0)">0</button>
+        <button id="equal" onclick="result()">=</button>
+        <button class="operators" id="operator" onclick="plus()">+</button>
+      </div>
+      <footer>
+        <p>CopyRight &copy; <span id="currYear"></span> By Asheel Ahmed Siddiqui</p>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

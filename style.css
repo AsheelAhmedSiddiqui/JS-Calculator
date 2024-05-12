@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 500px;
+  /* border: 1px solid; */
+}
+
+.container input {
+  width: 95.8%;
+  border: none;
+  margin-bottom: 2px;
+  padding: 20px 10px;
+  border-radius: 5px;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+  background-color: #323232;
+}
+
+.container input:focus {
+  outline: none;
+}
+
+.btn-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+}
+
+.btn-container button {
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.operators {
+  background-color: #323232;
+  color: #fff;
+  font-weight: 600;
+}
+
+.operators:hover {
+  color: #fff;
+  background-color: #3b3b3b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.numbers:hover {
+  background-color: #323232;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.numbers {
+  color: #fff;
+  background-color: #3b3b3b;
+  font-weight: 600;
+}
+
+#equal {
+  color: #323232;
+  background-color: #ff8780;
+}
+
+#equal:hover {
+  background-color: #f59590;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+footer p{
+  font-size: 1.2rem;
+  /* color: #fff; */
+  font-weight: 600;
+}
+
+footer p #currYear {
+  color: #ff817a;
+  font-weight: 600;
+}
+
+@media (max-width: 300px) {
+  .container{
+    width: 250px;
+  }
+
+  .container input {
+    padding: 20px 5px;
+  }
+}
